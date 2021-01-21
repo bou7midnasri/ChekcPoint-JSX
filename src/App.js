@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import myImag1 from './imageInPublic.jpg';
+import myImage2 from './imageInSrc.jpg';
+import ReactPlayer from 'react-player'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{border:"solid 1px black", maxWidth:"100vw"}}>
+      <h1 className="title red">Your name here</h1>
+      <img src={myImag1} alt="iamge public"></img>
+      <img src={myImage2} alt=" mage linux"></img>
+
+      </div>
+     
+      <ReactPlayer   style={{marginLeft:"400px", marginTop:"50px"}} url="https://www.youtube.com/watch?v=mxK8b99iJTg" />
+     
+      
+   
     </div>
   );
 }
